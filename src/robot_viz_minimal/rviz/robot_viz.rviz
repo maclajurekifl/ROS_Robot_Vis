@@ -14,7 +14,7 @@ Visualization Manager:
     - Class: rviz_default_plugins/Grid
       Name: Grid
       Enabled: true
-      Reference Frame: map
+      Reference Frame: odom
       Cell Size: 1
       Plane Cell Count: 20
       Color: 160; 160; 164
@@ -78,7 +78,7 @@ Visualization Manager:
 
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: map
+    Fixed Frame: odom
     Frame Rate: 30
 
   Tools:
