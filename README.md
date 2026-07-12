@@ -1,19 +1,25 @@
-﻿# ROS 2 Robot Visualisation (EEE3017)
+﻿# Year 3 Project — Robot Visualisation (EEE3017)
 
-Minimal RViz + URDF visualisation for the Year 3 Jetson Orin SLAM robot.
+Minimal **ROS 2** RViz / URDF visualisation package used with the Year 3 SLAM stack.
 
-**Main stack:** [jetson-orin-lidar-slam](https://github.com/maclajurekifl/jetson-orin-lidar-slam)
+**Main deployment repo:** [ROS_Deploy_Orin](https://github.com/maclajurekifl/ROS_Deploy_Orin)
 
-## Run
-`ash
+## Package
+
+`src/robot_viz_minimal` — launch file, RViz config, URDF (`macla_robot.urdf`), and a simple joint publisher.
+
+```bash
 source /opt/ros/humble/setup.bash
+cd <this_repo>
 colcon build --symlink-install
 source install/setup.bash
 ros2 launch robot_viz_minimal robot_viz.launch.py
-`
+```
 
-## Docs
-- `docs/EEE3017_Dissertation.pdf`
+## Documentation
+
+- `docs/EEE3017_Dissertation.pdf` — final Year 3 dissertation (shared with the deploy repo)
 
 ## Author
-Jude Burton
+
+Jude Burton — University of Surrey, Electrical & Electronic Engineering
